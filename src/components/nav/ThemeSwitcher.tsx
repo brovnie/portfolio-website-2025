@@ -16,7 +16,7 @@ export const ThemeSwitcher = () => {
       {theme === "light" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 relative z-0"
+          className="w-6 h-6 relative z-0 strok-black"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
@@ -32,7 +32,7 @@ export const ThemeSwitcher = () => {
       {theme === "dark" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-7 h-7 relative z-0"
+          className="w-7 h-7 relative z-0 stroke-white"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
