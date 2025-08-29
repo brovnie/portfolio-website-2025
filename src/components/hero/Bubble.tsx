@@ -1,10 +1,5 @@
 import React from "react";
 
-type Bubble = {
-  width: number;
-  height: number;
-};
-
 export const Bubble = ({ width, height }: Bubble) => {
   return (
     <div
