@@ -1,10 +1,15 @@
 import React from "react";
 
-export const Bubble = ({ width, height }: Bubble) => {
+export const Bubble = ({ width, height, top, left }: Bubble) => {
   return (
     <div
-      className="relative rotate-15"
-      style={{ width: `${width}px`, height: `${height}px` }}
+      className="relative rotate-15 floating"
+      style={{
+        width: `${width}px`,
+        height: `${height}px`,
+        top: `${top}px`,
+        left: `${left}px`,
+      }}
     >
       <div className="rounded-full relative overflow-hidden w-full h-full blur-xs bg-slate-100 border-1   border-slate-200">
         <div

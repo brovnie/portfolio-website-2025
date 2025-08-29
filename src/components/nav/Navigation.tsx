@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 export const Navigation = () => {
   return (
-    <nav className="sticky flex justify-between items-center pt-3">
+    <nav className="sticky flex justify-between items-center pt-3 z-10">
       <div>
         <Image
           src="/brovnie-logo.svg"
