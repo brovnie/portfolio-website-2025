@@ -54,7 +54,7 @@ export const Hero = () => {
       </div>
 
       <div className="mr-5 z-10 md:w-[800px]">
-        <h1 className="text-5xl md:text-8xl font-display">
+        <h1 className="text-5xl md:text-8xl font-display dark:text-sky-50">
           Front End developer with passion for Design.
         </h1>
       </div>

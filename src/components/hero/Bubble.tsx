@@ -11,7 +11,7 @@ export const Bubble = ({ width, height, top, left }: Bubble) => {
         left: `${left}px`,
       }}
     >
-      <div className="rounded-full relative overflow-hidden w-full h-full blur-xs bg-slate-100 border-1   border-slate-200">
+      <div className="rounded-full relative overflow-hidden w-full h-full blur-xs bg-slate-100 border-1   border-slate-200 dark:bg-dark">
         <div
           className="blur-[6px] absolute top-10 left-0 rounded-full  z-10 bg-gradient-to-t from-fuchsia-700 to-pink-500 h-full opacity-60"
           style={{ width: `${width / 7}px` }}

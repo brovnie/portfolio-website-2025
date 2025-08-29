@@ -11,12 +11,12 @@ export const BubbleColor = ({ width, height, top, left }: Bubble) => {
         left: `${left}px`,
       }}
     >
-      <div className="relative overflow-hidden w-full h-full rounded-full bg-cyan-200">
-        <div className="rounded-full w-full h-full border border-fuchsia-300 bg-radial from-indigo-400/40 from-30% to-fuchsia-600/50"></div>
-        <div className="absolute top-0 rounded-full w-full h-[73%] bg-sky-200 blur-[5px] mt-2"></div>
+      <div className="relative overflow-hidden w-full h-full rounded-full bg-cyan-200 dark:bg-dark">
+        <div className="rounded-full w-full h-full border border-fuchsia-300 dark:border-fuchsia-800 bg-radial from-indigo-400/40 from-30% to-fuchsia-600/50 dark:from-indigo-800 dark:to-fuchsia-800"></div>
+        <div className="absolute top-0 rounded-full w-full h-[73%] bg-sky-200 dark:bg-sky-800 blur-[5px] mt-2"></div>
       </div>
-      <div className="absolute w-[80%] h-[33%] bg-white rounded-full blur-sm left-5 top-4"></div>
-      <div className="absolute w-[26%] h-[26%] bg-white rounded-full blur-sm right-4 top-8"></div>
+      <div className="absolute w-[80%] h-[33%] bg-white dark:opacity-30 rounded-full blur-sm left-5 top-4"></div>
+      <div className="absolute w-[26%] h-[26%] bg-white dark:opacity-30 rounded-full blur-sm right-4 top-8"></div>
     </div>
   );
 };
