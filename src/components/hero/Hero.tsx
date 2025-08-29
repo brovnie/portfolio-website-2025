@@ -14,7 +14,7 @@ export const Hero = () => {
       const randomTop = Math.floor(
         Math.random() *
           (bubbleContainer.current
-            ? bubbleContainer.current.clientHeight
+            ? bubbleContainer.current.offsetHeight
             : 50) -
           randomSize
       );
@@ -53,9 +53,9 @@ export const Hero = () => {
           : generateBubble("color")}
       </div>
 
-      <div className="mr-5 z-10 md:w-[700px]">
-        <h1 className="text-5xl md:text-7xl">
-          Front End developer with passion for Design
+      <div className="mr-5 z-10 md:w-[800px]">
+        <h1 className="text-5xl md:text-8xl font-display">
+          Front End developer with passion for Design.
         </h1>
       </div>
     </div>
