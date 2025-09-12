@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <LenisScrollProvider>
       <ThemeProvider>
-        <div className="bg-white dark:bg-dark h-screen scroll-smooth">
+        <div className="bg-white dark:bg-dark h-full">
           <div className=" container m-auto">
             <Navigation></Navigation>
             <Hero />
