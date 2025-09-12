@@ -50,7 +50,10 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="flex relative flex-col md:flex-row justify-center md:justify-between items-center h-screen -mt-[55px]">
+    <div
+      id="home"
+      className="flex relative flex-col md:flex-row justify-center md:justify-between items-center h-screen -mt-[55px]"
+    >
       <div
         className="absolute z-0 md:static min-w-[40%] min-h-[100% - 80px]"
         ref={bubbleContainer}
