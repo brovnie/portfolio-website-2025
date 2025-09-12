@@ -14,7 +14,7 @@ export const Navigation = () => {
         />
       </div>
       <div className="flex gap-5">
-        <ul className="flex gap-5 dark:text-white">
+        <ul className="flex gap-5 dark:text-white text-xl">
           <Link href="/">Home</Link>
           <Link href="/#about">About</Link>
           <Link href="/#work">Work</Link>
