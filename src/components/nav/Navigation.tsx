@@ -28,12 +28,14 @@ export const Navigation = () => {
   return (
     <nav className="fixed top-0 container flex justify-between items-center pt-3 z-10">
       <div>
-        <Image
-          src="/brovnie-logo.svg"
-          alt="Logo brovnie"
-          width={35}
-          height={35}
-        />
+        <Link href="#home">
+          <Image
+            src="/brovnie-logo.svg"
+            alt="Logo brovnie"
+            width={35}
+            height={35}
+          />
+        </Link>
       </div>
       <div className="flex gap-5">
         <ul className="flex gap-5 dark:text-white text-xl">
