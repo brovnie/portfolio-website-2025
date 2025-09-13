@@ -6,7 +6,7 @@ import Skills from "./Skills";
 
 export const AboutMe = () => {
   return (
-    <div id="about" className=" pt-[80px] mx-5 sm:mx-0 relative z-10">
+    <div id="about" className=" pt-[80px] relative z-10">
       <H2 title="About Me" type="big" />
       <div className="dark:text-white py-10">
         <p>

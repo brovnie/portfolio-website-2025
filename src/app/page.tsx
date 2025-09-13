@@ -13,11 +13,13 @@ export default function Home() {
       <ThemeProvider>
         <div className="bg-white dark:bg-dark h-full">
           <div className=" container m-auto">
-            <Navigation></Navigation>
+            <Navigation />
             <Hero />
-            <AboutMe />
-            <Projects />
-            <Contact />
+            <div className="mx-5 sm:mx-0">
+              <AboutMe />
+              <Projects />
+              <Contact />
+            </div>
           </div>
         </div>
         <Footer />

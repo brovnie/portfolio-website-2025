@@ -61,8 +61,8 @@ export const Hero = () => {
         {bubbles}
       </div>
 
-      <div className="mr-5 z-10 md:w-[800px]">
-        <h1 className="text-5xl md:text-8xl font-display dark:text-sky-50 -mt-[57px]">
+      <div className="md:mr-5 z-10 md:w-[800px]">
+        <h1 className="text-5xl md:text-8xl font-display text-center md:text-left dark:text-sky-50 -mt-[57px]">
           Front End developer with passion for Design.
         </h1>
       </div>
