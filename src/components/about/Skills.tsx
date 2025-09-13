@@ -6,17 +6,31 @@ const Skills = () => {
     <div>
       <div className="flex flex-wrap gap-3">
         <ul className="flex flex-wrap gap-3">
-          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-green-100 rounded-md px-2 py-1 inline-block text-lg">
             React
           </li>
-          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-green-100 rounded-md px-2 py-1 inline-block text-lg">
             ReactNative
           </li>
-          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-green-100 rounded-md px-2 py-1 inline-block text-lg">
             VueJS
           </li>
-          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-green-100 rounded-md px-2 py-1 inline-block text-lg">
             Angular
+          </li>
+        </ul>
+        <ul className="flex flex-wrap gap-3">
+          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+            CSS
+          </li>
+          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+            SASS
+          </li>
+          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+            TailwindCss
+          </li>
+          <li className="bg-slate-200 rounded-md px-2 py-1 inline-block text-lg">
+            Bootstrap
           </li>
         </ul>
         <ul className="flex flex-wrap gap-3">
@@ -31,15 +45,29 @@ const Skills = () => {
           </li>
         </ul>
         <ul className="flex flex-wrap gap-3">
-          <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-pink-100 rounded-md px-2 py-1 inline-block text-lg">
             MangoDB
           </li>
-          <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+          <li className="bg-pink-100 rounded-md px-2 py-1 inline-block text-lg">
             SQL
           </li>
-          <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
-            SQLLite
+          <li className="bg-pink-100 rounded-md px-2 py-1 inline-block text-lg">
+            PostSQL
           </li>
+          <ul className="flex flex-wrap gap-3">
+            <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+              Wordpress
+            </li>
+            <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+              Magento
+            </li>
+            <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+              AWS
+            </li>
+            <li className="bg-indigo-100 rounded-md px-2 py-1 inline-block text-lg">
+              Docker
+            </li>
+          </ul>
         </ul>
         <ul className="flex flex-wrap gap-3">
           <li className="bg-fuchsia-100 rounded-md px-2 py-1 inline-block text-lg">

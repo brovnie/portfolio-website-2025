@@ -26,7 +26,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 container flex justify-between items-center pt-3 z-10">
+    <nav className="fixed top-0 container flex justify-between items-center z-50">
       <div>
         <Link href="#home">
           <Image
@@ -38,7 +38,7 @@ export const Navigation = () => {
         </Link>
       </div>
       <div className="flex gap-5">
-        <ul className="flex gap-5 dark:text-white text-xl">
+        <ul className="flex items-center gap-5 bg-white dark:bg-dark rounded-md dark:text-white  p-3  text-xl">
           <Link href="#home" legacyBehavior>
             <a onClick={scrollHandler} className="dark:text-sky-50">
               Home
@@ -52,6 +52,11 @@ export const Navigation = () => {
           <Link href="#work" legacyBehavior>
             <a onClick={scrollHandler} className="dark:text-sky-50">
               Work
+            </a>
+          </Link>
+          <Link href="#contact" legacyBehavior>
+            <a onClick={scrollHandler} className="dark:text-sky-50">
+              Contact
             </a>
           </Link>
         </ul>

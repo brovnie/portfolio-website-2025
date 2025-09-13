@@ -8,10 +8,18 @@
   src: url("/fonts/BerkshireSwash-Regular.ttf");
 }
 
+@font-face {
+  font-family: Lato;
+  src: url("/fonts/Lato-Regular.ttf");
+}
 @theme {
   --color-dark: #1c1018;
   --color-bubble-outer-border: #ebebeb;
   --font-display: "BerkshireSwash", "sans-serief";
+  --font-lato: "Lato", "sans-serief";
+}
+body {
+  font-family: var(--font-lato);
 }
 @keyframes float {
   0%,
