@@ -4,9 +4,9 @@ import { projects } from "@/data/projects";
 
 const Projects = () => {
   return (
-    <div id="work" className="h-screen pt-[80px] mx-5 md:mx-0">
-      <h2 className="text-5xl font-display pb-12">My projects</h2>
-      <div className=" flex flex-col sm:flex-row justify-between gap-10 md:gap-20">
+    <div id="work" className="h-screen pt-[80px] mx-5 md:mx-0 dark:bg-dark">
+      <h2 className="text-6xl font-display dark:text-white">My projects</h2>
+      <div className="flex flex-col sm:flex-row justify-between gap-10 md:gap-20 items-start">
         {projects.map((project) => (
           <SingleProject
             key={project.title}
