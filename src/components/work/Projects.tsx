@@ -5,7 +5,7 @@ import { H2 } from "../ui/H2";
 
 const Projects = () => {
   return (
-    <div id="work" className="h-screen pt-[80px] mx-5 md:mx-0 dark:bg-dark">
+    <div id="work" className="min-h-screen pt-[80px] mx-5 md:mx-0 dark:bg-dark">
       <H2 title="Work" />
       <div className="gap-10 md:gap-20 grid xl:grid-cols-3 xl:grid-rows-1 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-3">
         {projects.map((project) => (

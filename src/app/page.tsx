@@ -1,3 +1,4 @@
+import { AboutMe } from "@/components/about/AboutMe";
 import { Hero } from "@/components/hero/Hero";
 import { Navigation } from "@/components/nav/Navigation";
 import Projects from "@/components/work/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
           <div className=" container m-auto">
             <Navigation></Navigation>
             <Hero />
+            <AboutMe />
             <Projects />
           </div>
         </div>
