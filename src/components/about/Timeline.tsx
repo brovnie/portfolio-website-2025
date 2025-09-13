@@ -5,13 +5,12 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { H2 } from "../ui/H2";
 
 export const Timeline = () => {
   return (
-    <div>
-      <h2 className="font-display py-5 text-4xl dark:text-white">
-        My work experience
-      </h2>
+    <div className="pt-7">
+      <H2 type="small" title="Work experience" />
       <VerticalTimeline
         layout="1-column-left"
         className="dark:bg-dark dark:before:bg-dark"

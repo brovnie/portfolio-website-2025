@@ -2,11 +2,12 @@
 import React from "react";
 import { H2 } from "../ui/H2";
 import { Timeline } from "./Timeline";
+import Skills from "./Skills";
 
 export const AboutMe = () => {
   return (
-    <div id="about" className=" pt-[80px]">
-      <H2 title="About Me" />
+    <div id="about" className=" pt-[80px] mx-5 sm:mx-0 relative z-10">
+      <H2 title="About Me" type="big" />
       <div className="dark:text-white py-10">
         <p>
           Hello World! I&apos;m Marlena a Front End developer who&apos;s most at
@@ -23,7 +24,10 @@ export const AboutMe = () => {
         </p>
       </div>
       <div>
-        <Timeline />
+        <div>
+          <Skills />
+          <Timeline />
+        </div>
       </div>
     </div>
   );
