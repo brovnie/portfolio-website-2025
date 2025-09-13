@@ -9,7 +9,9 @@ import "react-vertical-timeline-component/style.min.css";
 export const Timeline = () => {
   return (
     <div>
-      <h2 className="font-display py-5 text-4xl">My work experience</h2>
+      <h2 className="font-display py-5 text-4xl dark:text-white">
+        My work experience
+      </h2>
       <VerticalTimeline
         layout="1-column-left"
         className="dark:bg-dark dark:before:bg-dark"
@@ -26,7 +28,13 @@ export const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle italic">
             Ideal Systems, Vilvoorde
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            Built and published mobile applications using React Native, handling
+            feature development, testing, and app store deployment. Designed UI
+            for new features in Figma, while gaining expertise in TypeScript,
+            React Query, and UX design through a Professional Diploma sponsored
+            by Ideal Systems.
+          </p>
           <p>ReactNative | React | ReactQuery | Redux | AWS | NodeJS</p>
           <div className="dark:blur-sm rounded-sm border border-slate-200 absolute size-full top-0 left-0"></div>
         </VerticalTimelineElement>
@@ -41,7 +49,13 @@ export const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle italic">
             GreenBananas, Aalst
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            Started as an intern and later joined full-time, building webshops
+            with Magento and WooCommerce, as well as WordPress sites using PHP
+            and JavaScript. On the Vendit project, I was responsible for
+            front-end layout and styling using Tailwind CSS and Alpine.js,
+            preparing responsive HTML for integration with a .NET backend.
+          </p>
           <p>Wordpress | Magento | VueJS | PHP</p>
           <div className="dark:blur-sm rounded-sm border border-slate-200 absolute size-full top-0 left-0"></div>
         </VerticalTimelineElement>

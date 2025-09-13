@@ -36,9 +36,6 @@
   border: 1px solid var(--color-slate-500);
   box-shadow: none;
 }
-.dark .vertical-timeline-element-content-arrow {
-  border-right-color: var(--color-slate-100);
-}
 .dark .vertical-timeline-element-icon.shadow-size-small {
   box-shadow: none;
 }
