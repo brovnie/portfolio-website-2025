@@ -25,3 +25,11 @@
 .floating {
   animation: float 3s ease-in-out infinite;
 }
+.owfao50 {
+  transform: scale(1);
+  perspective: 600px;
+  transition: all 0.25s ease-out;
+}
+.owfao50:hover {
+  transform: scale(1.14);
+}

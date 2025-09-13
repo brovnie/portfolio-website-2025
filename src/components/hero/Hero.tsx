@@ -20,7 +20,7 @@ export const Hero = () => {
       const generateBubble = () => {
         return Array.from({ length: randomTotal }).map((_, i) => {
           const randomSize = Math.floor(Math.random() * (150 - 25 + 1)) + 25;
-          const maxTop = container.offsetHeight - randomSize;
+          const maxTop = container.offsetHeight - randomSize - 200;
           const maxLeft = container.clientWidth - randomSize;
           const randomTop = Math.floor(Math.random() * Math.max(maxTop, 1));
           const randomLeft = Math.floor(Math.random() * Math.max(maxLeft, 1));
@@ -52,7 +52,7 @@ export const Hero = () => {
   return (
     <div
       id="home"
-      className="flex relative flex-col md:flex-row justify-center md:justify-between items-center h-screen -mt-[55px]"
+      className="flex relative flex-col md:flex-row justify-center md:justify-between items-center h-screen "
     >
       <div
         className="absolute z-0 md:static min-w-[40%] min-h-[100% - 80px]"
@@ -62,7 +62,7 @@ export const Hero = () => {
       </div>
 
       <div className="mr-5 z-10 md:w-[800px]">
-        <h1 className="text-5xl md:text-8xl font-display dark:text-sky-50">
+        <h1 className="text-5xl md:text-8xl font-display dark:text-sky-50 -mt-[57px]">
           Front End developer with passion for Design.
         </h1>
       </div>
