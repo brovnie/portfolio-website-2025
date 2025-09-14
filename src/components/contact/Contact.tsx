@@ -17,8 +17,8 @@ export const Contact = () => {
             Mail me
           </a>
         </div>
-        <ul className="pt-5 flex gap-5 fill-slate-700 dark:fill-slate-100 mx-auto md:mx-0">
-          <li className="w-12 h-12">
+        <ul className="pt-5 flex gap-5 fill-slate-700  dark:fill-slate-100 mx-auto md:mx-0">
+          <li className="w-12 h-12 hover:fill-slate-500 dark:hover:fill-slate-500">
             <a href="https://github.com/brovnie/" target="_blank">
               <svg
                 role="img"
@@ -30,7 +30,7 @@ export const Contact = () => {
               </svg>
             </a>
           </li>
-          <li className="w-12 h-12">
+          <li className="w-12 h-12 hover:fill-slate-500 dark:hover:fill-slate-500">
             <a href="https://codepen.io/brovnie_dev" target="_blank">
               <svg
                 role="img"
@@ -42,7 +42,7 @@ export const Contact = () => {
               </svg>
             </a>
           </li>
-          <li className="w-12 h-12">
+          <li className="w-12 h-12 hover:fill-slate-500 dark:hover:fill-slate-500">
             <a href="https://www.linkedin.com/in/marlenab2024/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
