@@ -10,8 +10,8 @@ export const AboutMe = () => {
   return (
     <div id="about" className=" pt-[80px] relative z-10 mb-10">
       <H2 title="About Me" type="big" />
-      <div className="flex gap-10 pt-10">
-        <div className="overflow-hidden rounded-full min-w-[300px] h-[300px] relative">
+      <div className="flex flex-col md:flex-row gap-3 md:gap-10 pt-10 items-center md:items-start">
+        <div className="overflow-hidden rounded-full w-[300px] h-[300px] relative flex items-center justify-center">
           <Image
             className=""
             src="/selfie-brovnie.jpg"
