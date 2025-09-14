@@ -19,7 +19,7 @@ export const AboutMe = () => {
             width={300}
             height={300}
           />
-          <div className="size-full absolute top-0 left-0 z-20 rounded-full inset-shadow-[-10px_-10px_10px_20px_white]"></div>
+          <div className="size-full absolute top-0 left-0 z-20 rounded-full inset-shadow-[-10px_-10px_10px_20px_white] dark:inset-shadow-none"></div>
         </div>
 
         <div>
