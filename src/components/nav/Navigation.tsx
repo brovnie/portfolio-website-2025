@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +8,8 @@ import { useLenis } from "lenis/react";
 
 export const Navigation = () => {
   const lenis = useLenis();
-
+  const [isOpen, setIsOpen] = useState(false);
+  const genericHamburgerLine = `h-1 w-9 my-1 rounded-full bg-dark dark:bg-white transition ease transform duration-300`;
   const scrollHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
 
@@ -26,8 +27,12 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 container flex justify-between items-center z-50 md:px-0 px-5">
-      <div>
+    <nav
+      className={`fixed top-0 container flex flex-col md:flex-row md:bg-transparent justify-start md:justify-between md:items-center z-50 md:px-0 px-5 ${
+        isOpen ? "bg-white dark:bg-dark" : "sm:bg-transparent"
+      }`}
+    >
+      <div className="flex justify-between w-full">
         <Link href="#home">
           <Image
             src="/brovnie-logo.svg"
@@ -36,31 +41,64 @@ export const Navigation = () => {
             height={35}
           />
         </Link>
+        <div className="flex md:hidden items-center">
+          <button
+            className="flex flex-col h-12 w-12 rounded justify-center items-center group"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "rotate-45 translate-y-3 group-hover:opacity-100"
+                  : " group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen ? "opacity-0" : " group-hover:opacity-100"
+              }`}
+            />
+            <div
+              className={`${genericHamburgerLine} ${
+                isOpen
+                  ? "-rotate-45 -translate-y-3 group-hover:opacity-100"
+                  : " group-hover:opacity-100"
+              }`}
+            />
+          </button>
+        </div>
       </div>
-      <div className="flex gap-5 bg-white dark:bg-dark rounded-md">
-        <ul className="flex items-center gap-5  dark:text-white  p-3  text-xl">
-          <Link href="#home" legacyBehavior>
-            <a onClick={scrollHandler} className="dark:text-sky-50">
-              Home
-            </a>
-          </Link>
-          <Link href="#about" legacyBehavior>
-            <a onClick={scrollHandler} className="dark:text-sky-50">
-              About
-            </a>
-          </Link>
-          <Link href="#work" legacyBehavior>
-            <a onClick={scrollHandler} className="dark:text-sky-50">
-              Work
-            </a>
-          </Link>
-          <Link href="#contact" legacyBehavior>
-            <a onClick={scrollHandler} className="dark:text-sky-50">
-              Contact
-            </a>
-          </Link>
-        </ul>
-        <ThemeSwitcher />
+
+      <div className={`gap-5 bg-white dark:bg-dark rounded-md  `}>
+        <div
+          className={`md:flex flex-col md:flex-row items-center gap-5 dark:text-white p-3 text-xl  h-screen w-full md:w-auto justify-center md:h-auto ${
+            isOpen ? "flex " : "hidden"
+          }`}
+        >
+          <ul className="flex flex-col md:flex-row items-center md:gap-5 dark:text-white p-3 md:text-xl text-4xl gap-10">
+            <Link href="#home" legacyBehavior>
+              <a onClick={scrollHandler} className="dark:text-sky-50">
+                Home
+              </a>
+            </Link>
+            <Link href="#about" legacyBehavior>
+              <a onClick={scrollHandler} className="dark:text-sky-50">
+                About
+              </a>
+            </Link>
+            <Link href="#work" legacyBehavior>
+              <a onClick={scrollHandler} className="dark:text-sky-50">
+                Work
+              </a>
+            </Link>
+            <Link href="#contact" legacyBehavior>
+              <a onClick={scrollHandler} className="dark:text-sky-50">
+                Contact
+              </a>
+            </Link>
+          </ul>
+          <ThemeSwitcher />
+        </div>
       </div>
     </nav>
   );
