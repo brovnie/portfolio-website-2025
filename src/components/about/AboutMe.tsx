@@ -8,10 +8,10 @@ import { Bubble } from "../hero/Bubble";
 
 export const AboutMe = () => {
   return (
-    <div id="about" className=" pt-[80px] relative z-10 mb-10">
+    <div id="about" className="pt-[80px] relative z-10 mb-10">
       <H2 title="About Me" type="big" />
       <div className="flex flex-col md:flex-row gap-3 md:gap-10 pt-10 items-center md:items-start">
-        <div className="overflow-hidden rounded-full w-[300px] h-[300px] relative flex items-center justify-center">
+        <div className="overflow-hidden rounded-full w-[300px] min-w-[300px] min-h-[300px] h-[300px] relative flex items-center justify-center">
           <Image
             className=""
             src="/selfie-brovnie.jpg"
@@ -19,7 +19,6 @@ export const AboutMe = () => {
             width={300}
             height={300}
           />
-          <div className="size-full absolute top-0 left-0 z-20 rounded-full inset-shadow-[-10px_-10px_10px_20px_white] dark:inset-shadow-none"></div>
         </div>
 
         <div>

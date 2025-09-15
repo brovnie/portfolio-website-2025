@@ -3,7 +3,7 @@ import { H2 } from "../ui/H2";
 
 export const Contact = () => {
   return (
-    <div className="min-h-[250px]" id="contact">
+    <div className="min-h-[250px] py-5" id="contact">
       <H2 type="big" title="Contact" />
       <div className="flex flex-col md:flex-row justify-between md:items-center py-5 dark:text-white">
         <div>

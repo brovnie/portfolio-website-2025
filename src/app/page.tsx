@@ -15,7 +15,7 @@ export default function Home() {
           <div className=" container m-auto">
             <Navigation />
             <Hero />
-            <div className="mx-5 sm:mx-0">
+            <div className="mx-5 xs:mx-0">
               <AboutMe />
               <Projects />
               <Contact />

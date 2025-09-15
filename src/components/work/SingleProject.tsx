@@ -13,14 +13,13 @@ interface Project {
 
 const SingleProject = (project: Project) => {
   return (
-    <CardContainer className="inter-var">
-      <div className="rounded-2xl relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] min-w-[375px] dark:border dark:border-slate-500">
-        <div className="w-[250px] h-[250px] overflow-hidden rounded-xl my-3 mx-auto">
+    <CardContainer className="inter-var min-w-[250px] px-0 pt-0">
+      <div className="rounded-2xl relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] min-w-[300px] w-auto max-w-[375px] dark:border dark:border-slate-500">
+        <div className="max-w-[300px] h-[250px] overflow-hidden rounded-xl my-3 mx-auto">
           <Image
-            className=""
             src={`/projects/${project.image}`}
             alt={project.title + " project image"}
-            width={250}
+            width={300}
             height={250}
           />
         </div>
