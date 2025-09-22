@@ -27,7 +27,7 @@ export const projects = [
     www: "",
   },
   {
-    title: "Project 3",
+    title: "Project 4",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec velit at dui condimentum accumsan non eget arcu.",
     technologies: ["NextJs", "TypeScirpt", "TailwindCSS"],

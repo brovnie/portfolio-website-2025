@@ -14,7 +14,9 @@ export default function Home() {
         <div className="bg-white dark:bg-dark h-full">
           <div className=" container m-auto">
             <Navigation />
-            <Hero />
+          </div>
+          <Hero />
+          <div className="container mx-auto">
             <div className="mx-5 xs:mx-0">
               <AboutMe />
               <Projects />

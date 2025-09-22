@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Bubble } from "./Bubble";
 import { BubbleColor } from "./BubbleColor";
+import DotGrid from "../ui/dot-grid";
 
 type BubbleType = "transparent" | "color";
 
@@ -25,7 +26,6 @@ export const Hero = () => {
           const randomTop = Math.floor(Math.random() * Math.max(maxTop, 1));
           const randomLeft = Math.floor(Math.random() * Math.max(maxLeft, 1));
 
-          console.log(bubbleContainer.current?.offsetLeft);
           return bubbleType === "transparent" ? (
             <Bubble
               key={i}
@@ -50,21 +50,29 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div
-      id="home"
-      className="flex relative flex-col md:flex-row justify-center md:justify-between items-center h-screen "
-    >
-      <div
-        className="absolute z-0 md:static min-w-[40%] min-h-[100% - 80px]"
-        ref={bubbleContainer}
-      >
-        {bubbles}
-      </div>
+    <div id="home" className="flex  h-screen ">
+      <DotGrid
+        dotSize={3}
+        gap={15}
+        proximity={120}
+        shockRadius={250}
+        shockStrength={5}
+        resistance={750}
+        returnDuration={1.5}
+      />
+      <div className=" container  mx-auto relative flex flex-col md:flex-row justify-center md:justify-between items-center">
+        <div
+          className="absolute z-0 md:static min-w-[40%] min-h-[100% - 80px]"
+          ref={bubbleContainer}
+        >
+          {bubbles}
+        </div>
 
-      <div className="md:mr-5 z-10 md:w-[800px]">
-        <h1 className="text-5xl md:text-8xl font-display text-center md:text-left dark:text-sky-50 -mt-[57px]">
-          Front End developer with passion for Design.
-        </h1>
+        <div className="md:mr-5 z-10 md:w-[800px]">
+          <h1 className="text-5xl md:text-8xl font-display text-center md:text-left dark:text-sky-50 -mt-[57px]">
+            Front End developer with passion for Design.
+          </h1>
+        </div>
       </div>
     </div>
   );

@@ -50,9 +50,3 @@ body {
 .vertical-timeline-element-content-arrow {
   display: none;
 }
-@media (min-width: 80rem) {
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
