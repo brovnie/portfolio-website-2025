@@ -1,6 +1,7 @@
 import React from "react";
+import { BubbleType } from "./types";
 
-export const Bubble = ({ width, height, top, left }: Bubble) => {
+export const Bubble = ({ width, height, top, left }: BubbleType) => {
   return (
     <div
       className="relative rotate-15 floating"

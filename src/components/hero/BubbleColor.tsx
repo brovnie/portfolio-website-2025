@@ -1,6 +1,7 @@
 import React from "react";
+import { BubbleType } from "./types";
 
-export const BubbleColor = ({ width, height, top, left }: Bubble) => {
+export const BubbleColor = ({ width, height, top, left }: BubbleType) => {
   return (
     <div
       className="relative floating"

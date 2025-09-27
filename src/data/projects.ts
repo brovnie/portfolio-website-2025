@@ -23,7 +23,7 @@ export const projects = [
     inProgress: true,
     title: "Study Duck",
     description:
-      "Study Duck is a collaborative study platform where users can join timed video sessions to study with others in real-time. During each session, participants earn points for staying focused, which can unlock achievements or match them with new study partners.",
+      "Study Duck is a collaborative study platform where users can join timed video sessions to study with others in real-time. During each focused session, participants earn points for staying attentive, which can unlock achievements or match them with new study partners effortlessly.",
     technologies: ["NextJs", "TypeScirpt", "TailwindCSS"],
     image: "study-duck.png",
     github: "https://github.com/brovnie/study-duck",

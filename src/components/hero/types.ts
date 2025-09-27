@@ -1,4 +1,4 @@
-type Bubble = {
+export type BubbleType = {
   width: number;
   height: number;
   top: number;

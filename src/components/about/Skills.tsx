@@ -1,5 +1,4 @@
 import React from "react";
-import { H2 } from "../ui/H2";
 
 const Skills = () => {
   return (
