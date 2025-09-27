@@ -32,13 +32,14 @@ export const Navigation = () => {
         isOpen ? "bg-white dark:bg-dark" : "sm:bg-transparent"
       }`}
     >
-      <div className="flex justify-between w-full">
-        <Link href="#home">
+      <div className="flex justify-between w-full ">
+        <Link href="#home" className="w-[35px] h-20 relative overflow-hidden">
           <Image
             src="/brovnie-logo.svg"
             alt="Logo brovnie"
-            width={35}
-            height={35}
+            fill
+            priority
+            className="object-contain"
           />
         </Link>
         <div className="flex md:hidden items-center">

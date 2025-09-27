@@ -14,7 +14,6 @@ interface Project {
 }
 
 const SingleProject = (project: Project) => {
-  console.log(project);
   return (
     <CardContainer className="inter-var min-w-[250px] px-0 pt-0">
       <div className="rounded-2xl relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] min-w-[300px] w-auto max-w-[375px] dark:border dark:border-slate-500">
@@ -25,6 +24,7 @@ const SingleProject = (project: Project) => {
             width={300}
             height={250}
             className="w-full h-full object-contain group-hover:scale-125"
+            priority
           />
         </div>
         <div className="p-5 pt-3 dark:text-white">

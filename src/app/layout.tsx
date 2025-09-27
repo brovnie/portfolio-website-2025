@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "brovnie portfolio Front end developer",
-  description: "Portfolio of a front end developer",
+  title: "Frontend Developer | React | UX Portfolio – brovnie",
+  description:
+    "Frontend Developer & UX Enthusiast — Crafting smooth, accessible UIs with React and React Native. Focused on user-first design, clean code, and fast interfaces. Let's build something people love. 💻✨",
 };
 
 export default function RootLayout({

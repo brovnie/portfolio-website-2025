@@ -17,6 +17,7 @@ export const AboutMe = () => {
             alt="selfie brovnie"
             width={300}
             height={300}
+            priority
           />
         </div>
 
