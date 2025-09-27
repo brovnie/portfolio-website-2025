@@ -76,25 +76,33 @@ export const Navigation = () => {
           }`}
         >
           <ul className="flex flex-col md:flex-row items-center md:gap-5 dark:text-white p-3 md:text-xl text-4xl gap-10">
-            <Link href="#home" legacyBehavior>
-              <a onClick={scrollHandler} className="dark:text-sky-50">
-                Home
-              </a>
+            <Link
+              href="#home"
+              onClick={scrollHandler}
+              className="dark:text-sky-50"
+            >
+              Home
             </Link>
-            <Link href="#about" legacyBehavior>
-              <a onClick={scrollHandler} className="dark:text-sky-50">
-                About
-              </a>
+            <Link
+              href="#about"
+              onClick={scrollHandler}
+              className="dark:text-sky-50"
+            >
+              About
             </Link>
-            <Link href="#work" legacyBehavior>
-              <a onClick={scrollHandler} className="dark:text-sky-50">
-                Work
-              </a>
+            <Link
+              href="#work"
+              onClick={scrollHandler}
+              className="dark:text-sky-50 inline-block"
+            >
+              Work
             </Link>
-            <Link href="#contact" legacyBehavior>
-              <a onClick={scrollHandler} className="dark:text-sky-50">
-                Contact
-              </a>
+            <Link
+              href="#contact"
+              onClick={scrollHandler}
+              className="dark:text-sky-50"
+            >
+              Contact
             </Link>
           </ul>
           <ThemeSwitcher />
