@@ -4,7 +4,6 @@ import { H2 } from "../ui/H2";
 import { Timeline } from "./Timeline";
 import Skills from "./Skills";
 import Image from "next/image";
-import { Bubble } from "../hero/Bubble";
 
 export const AboutMe = () => {
   return (

@@ -21,12 +21,12 @@ export const projects = [
   },
   {
     inProgress: true,
-    title: "Project 3",
+    title: "Study Duck",
     description:
-      "Lorem 222ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec velit at dui condimentum accumsan non eget arcu.",
+      "Study Duck is a collaborative study platform where users can join timed video sessions to study with others in real-time. During each session, participants earn points for staying focused, which can unlock achievements or match them with new study partners.",
     technologies: ["NextJs", "TypeScirpt", "TailwindCSS"],
-    image: "dummy-project-image.jpg",
-    github: "",
+    image: "study-duck.png",
+    github: "https://github.com/brovnie/study-duck",
     www: "",
   },
 ];
