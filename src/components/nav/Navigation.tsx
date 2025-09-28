@@ -44,7 +44,7 @@ export const Navigation = () => {
         </Link>
         <div className="flex md:hidden items-center">
           <button
-            className="flex flex-col h-12 w-12 rounded justify-center items-center group"
+            className="flex flex-col bg-white dark:bg-black rounded-xl shadow-md h-12 w-14 justify-center items-center group"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
