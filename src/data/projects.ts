@@ -13,7 +13,13 @@ export const projects = [
     title: "Tinder clone",
     description:
       "A Tinder Clone is a mobile dating application that replicates the core functionality of Tinder. It allows users to create profiles, swipe right to like or left to pass on other profiles, and match with users who mutually like each other. Features include user authentication, real-time chat, profile customization, and swipe animations.",
-    technologies: ["Expo", "ReactNative", "nativewind", "Firebase"],
+    technologies: [
+      "Expo",
+      "ReactNative",
+      "Typescript",
+      "nativewind",
+      "Firebase",
+    ],
     image: "Tinder-clone.png",
     github: "https://github.com/brovnie/tinder-clone",
     www: "",
