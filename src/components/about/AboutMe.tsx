@@ -10,13 +10,12 @@ export const AboutMe = () => {
     <div id="about" className="pt-[80px] relative z-10 mb-10">
       <H2 title="About Me" type="big" />
       <div className="flex flex-col md:flex-row gap-3 md:gap-10 pt-10 items-center md:items-start">
-        <div className="overflow-hidden rounded-full w-[300px] min-w-[300px] min-h-[300px] h-[300px] relative flex items-center justify-center">
+        <div className="overflow-hidden rounded-full w-[250px] h-[250px] md:min-w-[300px] mid:w-[300px] md:h-[300px] relative flex items-center justify-center">
           <Image
-            className=""
+            className="object-cover"
             src="/selfie-brovnie.jpg"
             alt="selfie brovnie"
-            width={300}
-            height={300}
+            fill
             priority
           />
         </div>
