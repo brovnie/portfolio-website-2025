@@ -12,7 +12,7 @@ export const Navigation = () => {
   const genericHamburgerLine = `h-1 w-9 my-1 rounded-full bg-dark dark:bg-white transition ease transform duration-300`;
   const scrollHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-
+    setIsOpen(false);
     const href = e.currentTarget.getAttribute("href");
     if (!href || !href.startsWith("#")) return;
 
@@ -76,35 +76,35 @@ export const Navigation = () => {
             isOpen ? "flex " : "hidden"
           }`}
         >
-          <ul className="flex flex-col md:flex-row items-center md:gap-5 dark:text-white p-3 md:text-xl text-4xl gap-10">
-            <Link
+          <ul className="flex flex-col md:flex-row items-center md:gap-5 dark:text-white md:text-xl text-4xl gap-10">
+            <a
               href="#home"
               onClick={scrollHandler}
-              className="dark:text-sky-50"
+              className="dark:text-sky-50 py-3"
             >
               Home
-            </Link>
-            <Link
+            </a>
+            <a
               href="#about"
               onClick={scrollHandler}
-              className="dark:text-sky-50"
+              className="dark:text-sky-50 py-3"
             >
               About
-            </Link>
-            <Link
+            </a>
+            <a
               href="#work"
               onClick={scrollHandler}
-              className="dark:text-sky-50 inline-block"
+              className="dark:text-sky-50 py-3"
             >
               Work
-            </Link>
-            <Link
+            </a>
+            <a
               href="#contact"
               onClick={scrollHandler}
-              className="dark:text-sky-50"
+              className="dark:text-sky-50 py-3"
             >
               Contact
-            </Link>
+            </a>
           </ul>
           <ThemeSwitcher />
         </div>
