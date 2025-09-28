@@ -72,7 +72,7 @@ export const Navigation = () => {
 
       <div className={`gap-5 bg-white dark:bg-dark rounded-md  `}>
         <div
-          className={`md:flex flex-col md:flex-row items-center gap-5 dark:text-white p-3 text-xl  h-screen w-full md:w-auto justify-center md:h-auto ${
+          className={`md:flex flex-col md:flex-row items-center gap-5 dark:text-white px-3 text-xl  h-screen w-full md:w-auto justify-center md:h-auto ${
             isOpen ? "flex " : "hidden"
           }`}
         >

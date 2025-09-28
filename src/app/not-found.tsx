@@ -4,7 +4,7 @@ import "./globals.css";
 import FuzzyText from "@/components/ui/fuzzy-text";
 import Link from "next/link";
 
-const GlobalNotFound = () => {
+const NotFound = () => {
   return (
     <html>
       <body className="bg-gray-200">
@@ -22,4 +22,4 @@ const GlobalNotFound = () => {
   );
 };
 
-export default GlobalNotFound;
+export default NotFound;
