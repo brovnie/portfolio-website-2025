@@ -6,11 +6,11 @@ export const ThemeSwitcher = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="relative w-7 py-5">
+    <div className="relative w-7 py-5 ">
       <input
         type="checkbox"
         name="theme-switcher"
-        className="w-full h-full absolute z-10 transparent border-0 outline-0 ring-0 appearance-none"
+        className="w-full h-full cursor-pointer absolute z-10 transparent border-0 outline-0 ring-0 appearance-none"
         onChange={toggleTheme}
       />
       {theme === "light" && (
