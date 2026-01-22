@@ -73,7 +73,7 @@ const Skills = () => {
             Figma
           </li>
           <li className="bg-fuchsia-100 dark:bg-fuchsia-900 dark:text-white rounded-md px-2 py-1 inline-block text-lg">
-            AdomeXD
+            AdobeXD
           </li>
           <li className="bg-fuchsia-100 dark:bg-fuchsia-900 dark:text-white rounded-md px-2 py-1 inline-block text-lg">
             Illustrator

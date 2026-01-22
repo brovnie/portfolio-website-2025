@@ -9,7 +9,7 @@ import { useLenis } from "lenis/react";
 export const Navigation = () => {
   const lenis = useLenis();
   const [isOpen, setIsOpen] = useState(false);
-  const genericHamburgerLine = `h-1 w-9 my-1 rounded-full bg-dark dark:bg-white transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-9 my-1 rounded-full bg-dark transition ease transform duration-300`;
   const scrollHandler = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setIsOpen(false);
@@ -29,7 +29,7 @@ export const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 container flex flex-col md:flex-row md:bg-transparent justify-start md:justify-between md:items-center z-50 md:px-0 px-5 ${
-        isOpen ? "bg-white dark:bg-dark" : "sm:bg-transparent"
+        isOpen ? "bg-white" : "sm:bg-transparent"
       }`}
     >
       <div className="flex justify-between w-full ">
@@ -44,7 +44,7 @@ export const Navigation = () => {
         </Link>
         <div className="flex md:hidden items-center">
           <button
-            className="flex flex-col bg-white dark:bg-black rounded-xl shadow-md h-12 w-14 justify-center items-center group"
+            className="flex flex-col bg-white rounded-xl shadow-md h-12 w-14 justify-center items-center group"
             onClick={() => setIsOpen(!isOpen)}
           >
             <div
